@@ -4,6 +4,8 @@ The RESTful api for jiashu.ink
 ### Development
 
 ```bash
+pip install -r requirements/dev.txt
+
 source .env
 flask run --with-threads
 
