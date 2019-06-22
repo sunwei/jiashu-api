@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Domain Driven Design framework."""
+"""Domain Driven Design framework - Entity."""
 
 import uuid
 
