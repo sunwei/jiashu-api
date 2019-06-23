@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Domain Driven Design framework - Value Object."""
+import copy
 from dataclasses import dataclass
 
 
@@ -15,5 +16,5 @@ class ValueObject(object):
     def __copy__(self):
         return ValueObject(self.name)
 
-    def __deepcopy__(self, memo):
-        return ValueObject(copy.deepcopy(self.name, memo))
+    def __deepcopy__(self):
+        return ValueObject(copy.deepcopy(self.name))
